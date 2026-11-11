@@ -1,26 +1,41 @@
 # Atelier PS5 Mods
 
-English patches, high-refresh performance patches, and a character menu for Atelier on PS5. **Requires a jailbroken PS5 and the matching game ID/build.**
+English patches, an optional Resleriana character menu, and optional 120Hz patches for jailbroken PS5 consoles. Use the matching title ID and loose-file game build.
 
-## Downloads
+## Atelier Resleriana — PPSA26791
 
-Download the ZIP under **Assets** on each release page.
+**[Download the Final Mod Pack](https://github.com/tanner02/atelier-mods/releases/download/resleriana-english-v1/Resleriana-PPSA26791-Final-Mod-Pack.zip)** — English patch plus optional character menu and 120Hz layers, together in one archive.
 
-| Mod | Game ID | Purpose |
+Fully close the game and back up the original files before installing. For each selected folder below, copy its **contents** into the game root containing `eboot.bin`, merging folders and overwriting files. Do not copy the numbered wrapper folders themselves. Fully relaunch the game afterward.
+
+Install in this order:
+
+1. **`01 English Patch` — first.** Stop here for English only.
+2. **`02 Optional Character Menu` — second, if wanted.** Adds an R3 character selector with 29 characters and the console-confirmed execute-only-memory crash and walking/running idle fixes. You may stop here: English and the character menu do not require the 120Hz patch.
+3. **`03 Optional 120Hz - INSTALL LAST` — last, if wanted.** Choose **one** folder and copy its contents into the game root:
+   - **`A English Only`** if you skipped the character menu.
+   - **`B With Character Menu`** if you installed the character menu.
+
+Do not install both 120Hz variants or apply older patch archives after these layers. A compatible 120Hz display and working [ps-patch-system](https://github.com/illusionyy/ps-patch-system) setup are required for 120Hz output; 120Hz output does not guarantee 120 FPS.
+
+**Already installed an older 120Hz patch?** Skipping step 3 does not remove it. Restore your clean game backup first, then install English and, optionally, the character menu to return to normal performance settings. Restore your backed-up original files to uninstall the mods.
+
+### Individual downloads
+
+The existing releases remain available. Apply the same order: **English first → optional character menu second → optional 120Hz last**.
+
+| Download | Installation |
+| --- | --- |
+| [English patch](https://github.com/tanner02/atelier-mods/releases/tag/resleriana-english-v1) | Install first; copy the patch contents into the game root. |
+| [Character menu](https://github.com/tanner02/atelier-mods/releases/tag/resleriana-character-menu-v1) | Install after English. Copy `Media` and `ampr_emu.index` from the archive root into the game root; there is no wrapper folder. Includes the 29-character menu and execute-only-memory crash and walking/running idle fixes. |
+| [120Hz patch](https://github.com/tanner02/atelier-mods/releases/tag/resleriana-120hz-v1) | Install last. Choose the English-only or character-menu variant to match your installation, then copy that folder's **contents** into the game root. Do not copy both variants. |
+
+## Atelier Ryza DX
+
+| Game | Title ID | Download |
 | --- | --- | --- |
-| [Atelier Ryza DX — English & 120 Hz](https://github.com/tanner02/atelier-mods/releases/tag/ryza1-dx-v1) | PPSA30304 | Adds English text/assets, enables 120 Hz output support, and disables VSync. |
-| [Atelier Ryza 2 DX — English & 120 Hz](https://github.com/tanner02/atelier-mods/releases/tag/ryza2-dx-v1) | PPSA31215 | Adds English text/assets, enables 120 Hz output support, and disables VSync. |
-| [Atelier Ryza 3 DX — English & 120 Hz](https://github.com/tanner02/atelier-mods/releases/tag/ryza3-dx-v1) | PPSA31217 | Adds English text/assets and 120 Hz output support; disables VSync to address high-refresh walking-animation issues. |
-| [Atelier Resleriana — English Patch](https://github.com/tanner02/atelier-mods/releases/tag/resleriana-english-v1) | PPSA26791 | Adds English text and assets to The Red Alchemist & the White Guardian. |
-| [Atelier Resleriana — 120 Hz & Performance](https://github.com/tanner02/atelier-mods/releases/tag/resleriana-120hz-v1) | PPSA26791 | Enables 120 Hz output, disables VSync/anti-aliasing, and fixes high-refresh cloth jitter while preserving cloth movement. |
-| [Atelier Resleriana — Character Menu](https://github.com/tanner02/atelier-mods/releases/tag/resleriana-character-menu-v1) | PPSA26791 | Press R3 to select from 29 free-roam characters in a paged menu. Story voices/protagonist behavior still follow Rias/Slade. |
+| Atelier Ryza DX | `PPSA30304` | [English + 120Hz](https://github.com/tanner02/atelier-mods/releases/tag/ryza1-dx-v1) |
+| Atelier Ryza 2 DX | `PPSA31215` | [English + 120Hz](https://github.com/tanner02/atelier-mods/releases/tag/ryza2-dx-v1) |
+| Atelier Ryza 3 DX | `PPSA31217` | [English + 120Hz](https://github.com/tanner02/atelier-mods/releases/tag/ryza3-dx-v1) |
 
-## Installation
-
-Fully close the game and back up files before replacing them. Use the matching loose-file game build and fully relaunch after installing.
-
-- **Ryza DX:** Open the ZIP’s `PPSA…-English-Patch` folder and copy its contents into the game root (the folder containing `eboot.bin`), merging folders and replacing files.
-- **Resleriana:** Copy the ZIP contents directly into the game root, merging folders and replacing files. Install **English first → 120 Hz/performance (optional) → character menu (optional, last)**. Reinstalling earlier packages can overwrite shared mod files.
-- **120 Hz:** Use a compatible display and the appropriate [ps-patch-system](https://github.com/illusionyy/ps-patch-system) 120 Hz configuration. A 120 Hz video signal does not guarantee 120 FPS.
-
-See each release for package-specific notes.
+Fully close the game and back up the original files. Open the matching `PPSA…-English-Patch` folder and copy its **contents** into the game root containing `eboot.bin`, merging folders and overwriting files. Do not copy the wrapper folder itself. Fully relaunch afterward. Follow the release notes for the 120Hz setup.
